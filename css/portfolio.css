@@ -84,7 +84,21 @@ section{
     border: .9rem solid var(--main-color);
     border-radius: 3px 70px 70px 70px;
     border-radius: 0px 50px 0px 0px;
+    animation: floatImage 4s ease-in-out infinite;
 }
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 
 .home-content h3{
     font-size: 2.2rem;
@@ -399,6 +413,10 @@ span{
         padding-bottom: 7rem;
     }
     
+    .contact{
+        min-height: auto;
+    }
+    
     .portfolio{
         padding-bottom: 7rem;
     }
@@ -478,10 +496,41 @@ span{
     }
 }
 
+@media (max-width: 617px){
+    .portfolio-container{
+        grid-template-columns: 1fr;
+    }
+}
 
 
+@media (max-width: 450px){
+    html{
+        font-size:50%;   
+    } 
+    .contact form .input-box input{
+        width: 100%;
+    }
+}
 
 
+@media (max-width: 450px){
+    .home-img img{
+        width: 90vw;
+    }
+    
+    .about-img img{
+        width: 90vw;
+    }
+    
+    .footer{
+        flex-direction: column-reverse;
+    }
+    
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
 
 
 
