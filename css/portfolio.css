@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
 
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 
 *{
@@ -84,8 +85,7 @@ section{
 .home-img img{
     width: 25vw;
     border: .9rem solid var(--main-color);
-    border-radius: 3px 70px 70px 70px;
-    border-radius: 0px 50px 0px 0px;
+    border-radius: 50% 10%;
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -112,6 +112,7 @@ section{
 }
 
 span{
+    font-family: 'Roboto Mono', monospace;
     color: var(--main-color);
 }
 
@@ -119,6 +120,7 @@ span{
     font-size: 4.0rem;
     font-weight: 700;
     line-height: 1.2;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .home-content p{
@@ -174,6 +176,7 @@ span{
     width: 25vw;
     border: .7rem solid var(--main-color);
     border-radius: 50%;
+    border-radius: 50% 10%;
     transform: rotateY(180deg);
 }
 
@@ -186,6 +189,7 @@ span{
 .about-content h2{
     text-align: left;
     line-height: 1.2;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .about-content h3{
@@ -205,6 +209,7 @@ span{
 
 .services h2{
     margin-bottom: 5rem;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .services-container{
@@ -237,6 +242,7 @@ span{
 
 .services-box h3{
     font-size: 2.6rem;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .services-box p{
@@ -250,6 +256,7 @@ span{
 
 .portfolio h2{
     margin-bottom: 4rem;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .portfolio-container{
@@ -268,7 +275,8 @@ span{
 }
 
 .portfolio-box img{
-    width: 100%;
+    width: 600px;
+    height: 250px;
     transition: .5s ease;
 }
 
@@ -298,7 +306,7 @@ span{
 }
 
 .portfolio-layer h4{
-    font-size: 3rem
+    font-size: 3rem;
 }
 
 .portfolio-layer p{
@@ -323,6 +331,7 @@ span{
 
 .contact h2{
     margin-bottom: 3rem;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .contact form{
