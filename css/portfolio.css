@@ -27,6 +27,7 @@ html{
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    /* overflow: hidden; */
 }
 
 section{
@@ -46,6 +47,7 @@ section{
      align-items: center;
      z-index: 100;
 }
+
 
 .header .sticky{
     border-bottom: 1rem solid rgba(0, 0, 0, .2);
@@ -162,6 +164,48 @@ span{
 .btn:hover{
     box-shadow: none;
 }
+
+.home::before{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg,#0ef,rgb(9, 31, 32));
+    animation: object1 6s linear infinite;
+}
+
+.home::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg,#0ef,rgb(9, 31, 32));
+    animation: object2 6s linear infinite;
+}
+@keyframes object1{
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+}
+@keyframes object2{
+    50%{
+        left: 35%;
+        top: 10%;
+    }
+}
+
+.cols0{
+    z-index: 5;
+}
+
+
 
 
 .about{
@@ -340,7 +384,31 @@ span{
     text-align: center;
     margin-bottom: 3rem;
 }
-
+.contact::before{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 12;
+    bottom: 40; 
+    background: linear-gradient(45deg,#0ef,rgb(9, 31, 32));
+    animation: object1 6s linear infinite;
+}
+.contact::after{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35;
+    top: -42;
+    background: linear-gradient(45deg,#0ef,rgb(9, 31, 32));
+    animation: object2 6s linear infinite;
+}
+.cols0{
+    z-index: 3;
+}
 .contact form .input-box{
     display: flex;
     justify-content: space-between;
