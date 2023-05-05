@@ -395,19 +395,9 @@ span{
     background: linear-gradient(45deg,#0ef,rgb(9, 31, 32));
     animation: object1 6s linear infinite;
 }
-.contact::after{
-    position: absolute;
-    content: '';
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    left: 35;
-    top: -42;
-    background: linear-gradient(45deg,#0ef,rgb(9, 31, 32));
-    animation: object2 6s linear infinite;
-}
+
 .cols0{
-    z-index: 3;
+    z-index: 9;
 }
 .contact form .input-box{
     display: flex;
@@ -505,6 +495,9 @@ span{
     .footer{
         padding: 2rem 3%;
     }
+    .contact::before{
+        display: none;
+    }
 }
 
 @media (max-width: 768px){
@@ -575,11 +568,17 @@ span{
     .portfolio-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    .contact::before{
+        display: none;
+    }
 }
 
 @media (max-width: 617px){
     .portfolio-container{
         grid-template-columns: 1fr;
+    }
+    .contact::before{
+        display: none;
     }
 }
 
@@ -590,6 +589,9 @@ span{
     } 
     .contact form .input-box input{
         width: 100%;
+    }
+    .contact::before{
+        display: none;
     }
 }
 
@@ -610,6 +612,9 @@ span{
     .footer p{
         text-align: center;
         margin-top: 2rem;
+    }
+    .contact::before{
+        display: none;
     }
 }
 
