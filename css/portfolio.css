@@ -563,7 +563,7 @@ span{
         margin-bottom: 3rem;
     }
     portfolio h2{
-        margin-bottom: 3rem
+        margin-bottom: 3rem;
     }
     .portfolio-container{
         grid-template-columns: repeat(2, 1fr);
@@ -574,12 +574,14 @@ span{
 }
 
 @media (max-width: 617px){
+    /* I added this now */
     body{
         width: 100%;
     }
     .header{
         width: 100%;
     }
+     /* I added this now */
     .portfolio-container{
         grid-template-columns: 1fr;
     }
@@ -598,9 +600,13 @@ span{
     }
     .header{
         width: 100%;
+        /* ///changes///  */
+        width: 95%;
     } 
     .contact form .input-box input{
-        width: 100%;
+        /* width: 100%; */
+        /* ///changes///  */
+        width: 95%;
     }
     .contact::before{
         display: none;
@@ -630,8 +636,38 @@ span{
     }
 }
 
-
-
+/* ////////////////additional media///////////// */
+@media (max-width: 375){
+    .header{
+        padding: 1rem 2%;
+    }
+    
+    .home-img img{
+        width: 80vw;
+    }
+    
+    .about-img img{
+        width: 80vw;
+    }
+    
+    .footer{
+        flex-direction: column-reverse;
+    }
+    
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .contact::before{
+        display: none;
+    }
+    portfolio h2{
+        margin-bottom: 2.5rem;
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 
 
