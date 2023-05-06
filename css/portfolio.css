@@ -574,6 +574,12 @@ span{
 }
 
 @media (max-width: 617px){
+    body{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
     .portfolio-container{
         grid-template-columns: 1fr;
     }
@@ -584,8 +590,14 @@ span{
 
 
 @media (max-width: 450px){
+    body{
+        width: 100%;
+    }
     html{
         font-size:50%;   
+    }
+    .header{
+        width: 100%;
     } 
     .contact form .input-box input{
         width: 100%;
