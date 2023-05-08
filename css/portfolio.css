@@ -11,7 +11,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root{
@@ -351,11 +351,15 @@ span{
 
 .portfolio-layer h4{
     font-size: 3rem;
+    font-weight: 3rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .portfolio-layer p{
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
+    font-weight: 3rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .portfolio-layer a{
