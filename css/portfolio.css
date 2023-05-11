@@ -360,7 +360,7 @@ span{
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
     font-weight: 3rem;
-    font-family: var(--)
+    font-family: var;
 }
 
 .portfolio-layer a{
