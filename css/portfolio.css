@@ -85,7 +85,8 @@ section{
 }
 
 .home-img img{
-    width: 25vw;
+    width: 30vw;
+    height: 30vw;
     border: .9rem solid var(--main-color);
     border-radius: 50% 10%;
     animation: floatImage 4s ease-in-out infinite;
@@ -481,6 +482,7 @@ span{
     .header{
         padding: 2rem 3%;
     }
+
     
     section{
         padding: 10rem 3% 2rem;
@@ -544,7 +546,8 @@ span{
     }
     
     .home-img img {
-        width: 70vw;
+        width: 60vw;
+        height: 60vw;
         margin-top: 4rem;
     }
     
@@ -553,7 +556,7 @@ span{
     }
     
     .about img{
-        width: 70vw;
+        width: 50vw;
         margin-top: 4rem;
     }
     
@@ -652,7 +655,7 @@ span{
     }
     
     .about-img img{
-        width: 80vw;
+        width: 70vw;
     }
     
     .footer{
