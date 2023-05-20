@@ -166,11 +166,11 @@ span{
     box-shadow: none;
 }
 
-.home::before{
+/* .home::before{
     position: absolute;
     content: '';
-    height: 600px;
-    width: 600px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     left: -12%;
     top: 40%;
@@ -181,8 +181,8 @@ span{
 .home::after{
     position: absolute;
     content: '';
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     left: 35%;
     top: 12%;
@@ -204,7 +204,7 @@ span{
 
 .cols0{
     z-index: 5;
-}
+} */
 
 
 
@@ -221,7 +221,8 @@ span{
     width: 25vw;
     border: .7rem solid var(--main-color);
     border-radius: 50%;
-    border-radius: 50% 10%;
+    /* border-radius: 50% 10%; */
+    
     transform: rotateY(180deg);
 }
 
@@ -471,7 +472,7 @@ span{
 
 
 /* BREAKPOINTS */
-@media (max-width:1200px) {
+@media screen and (max-width:1200px) {
     html{
         font-size: 55%;
     }
@@ -507,7 +508,7 @@ span{
     }
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     #menu-icon{
         display: block;
     }
@@ -581,7 +582,7 @@ span{
     }
 }
 
-@media (max-width: 617px){
+@media screen and (max-width: 617px){
     /* I added this now */
     body{
         width: 100%;
@@ -599,7 +600,7 @@ span{
 }
 
 
-@media (max-width: 450px){
+@media screen and (max-width: 450px){
     body{
         width: 100%;
     }
@@ -622,13 +623,16 @@ span{
 }
 
 
-@media (max-width: 450px){
+@media screen and (max-width: 450px){
+    body{
+        width: 100%;
+    }
     .home-img img{
-        width: 90vw;
+        width: 100%;
     }
     
     .about-img img{
-        width: 90vw;
+        width: 100%;
     }
     
     .footer{
@@ -645,19 +649,32 @@ span{
 }
 
 /* ////////////////additional media///////////// */
-@media (max-width: 375){
+@media screen and (max-width: 320px){
+    .body{
+        width: 100%;
+    }
+    
     .header{
         padding: 1rem 2%;
     }
     
     .home-img img{
-        width: 80vw;
+        width: 100vw;
+        height: 100vw;
     }
     
     .about-img img{
-        width: 70vw;
+        width: 100%;
     }
-    
+    .portfolio-container{
+        display: block;
+        padding: 1rem 2%;
+    }
+    .contact form .input-box input{
+        align-content: center;
+        text-align: center;
+        width: 100%;
+    }
     .footer{
         flex-direction: column-reverse;
     }
@@ -669,12 +686,12 @@ span{
     .contact::before{
         display: none;
     }
-    portfolio h2{
+    /* portfolio h2{
         margin-bottom: 2.5rem;
     }
     .portfolio-container{
         grid-template-columns: repeat(2, 1fr);
-    }
+    } */
 }
 
 
